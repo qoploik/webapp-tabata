@@ -1,0 +1,59 @@
+.timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.timer-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.timer-display__phase {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.timer-display--work .timer-display__phase {
+  color: #2e7d32;
+}
+
+.timer-display--rest .timer-display__phase {
+  color: #c62828;
+}
+
+.timer-display--done .timer-display__phase {
+  color: #1565c0;
+}
+
+.timer-display__time {
+  font-size: 4rem;
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+}
+
+.timer-display__round {
+  font-size: 1rem;
+  color: #666;
+}
+
+.timer-controls {
+  display: flex;
+  gap: 1rem;
+}
+
+.timer-controls button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.timer-controls button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
